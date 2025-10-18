@@ -1,0 +1,71 @@
+/* Reset trochu marginů a paddingů */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tělo stránky */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Hlavní kontejner */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Nadpisy */
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Odkazy */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #005fa3;
+}
+
+/* Tlačítka */
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Paragrafy */
+p {
+  margin-bottom: 15px;
+}
+
+/* Jednoduchý responsive layout */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  button {
+    width: 100%;
+  }
+}
